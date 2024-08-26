@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "augment",
+	"version": "${version}",
+	"name": "Augment SMP",
+	"description": "Augment SMP!",
+	"authors": [
+		"WereF0X, Techmastero"
+	],
+	"contact": {
+		"homepage": "https://discord.gg/HXbZHK5hFd",
+		"sources": ""
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/augment/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fox.mods.AugmentSMP"
+		],
+		"fabric-datagen": [
+			"fox.mods.AugmentSMPDataGenerator"
+		]
+	},
+	"mixins": [
+		"augment.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
